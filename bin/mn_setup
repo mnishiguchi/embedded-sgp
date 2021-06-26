@@ -1,0 +1,5 @@
+#!/bin/sh
+
+# Copy "sensirion_arch_config.h" header file bacause it is missing in the "sgp40_voc_index" directory.
+curl https://raw.githubusercontent.com/Sensirion/embedded-common/1ac7c72c895d230c6f1375865f3b7161ce6b665a/sensirion_common.h \
+  -o sgp40_voc_index/sensirion_arch_config.h
